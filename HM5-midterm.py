@@ -4,14 +4,6 @@ import requests as req
 import matplotlib.pyplot as plt
 
 # Task1
-# I did not know what is algae! so I searched about it:
-# Cyanobacteria and algae having complex photosynthetic
-# systems can channelize absorbed solar energy into other
-# forms of energy for production of food and metabolites.
-# In addition, they are promising biocatalysts and can be
-# used in the field of “white biotechnology” for enhancing
-# the sustainable production of food, metabolites, and green
-# energy sources such as biodiesel.
 # creating dataframe
 algae = pd.read_csv('/home/sedreh/Downloads/algae.csv')
 # at first I look at the data to understand it
