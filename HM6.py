@@ -56,7 +56,7 @@ def create_graph(json_data):
 
     return d, sorted(d.keys())
 
-def dfs(graph, start):
+def bfs(graph, start):
     visited, queue = set(), [start]
     while queue:
         vertex = queue.pop(0)
@@ -69,7 +69,7 @@ def dfs(graph, start):
 graph, nodes = create_graph(json_data)
 
 for node in nodes:
-    print('{}: {}'.format(node, len(dfs(graph, node))))
+    print('{}: {}'.format(node, len(bfs(graph, node))))
 
 
 
