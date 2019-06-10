@@ -54,7 +54,8 @@ for i in range(3):
     proteins.append(seq5[i:].translate(table=1, to_stop=True))
     proteins.append(seq6[i:].translate(table=1, to_stop=True))
 
-sorted(proteins, key = lambda x: len(x))
+P = sorted(proteins, key = lambda x: len(x))
+print(P)
 
 #Apply the function to generate all possible translates skipping STOP codon:
 def translate(seq, start=False):
