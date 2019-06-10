@@ -20,10 +20,18 @@
 #-3 (reverse)
 #Translated sequences are yielded in this order.
 
+
+
+##Six-frame translation
+#Since DNA is interpreted in groups of three nucleotides (codons),
+#a DNA strand has three distinct reading frames.The double helix of a DNA molecule 
+#has two anti-parallel strands; with the two strands having three reading frames each, 
+#there are six possible frame translations.
+
 from skbio import DNA
 
 dna = DNA('AGTACTAGAGCATTCTATGGAG')
-peptides = [str(x) for x in dna.translate_six_frames()]
+peptides = [str(x) for x in dna.translate_six_frames()]   #
 x = sorted(peptides, key=len)
 
 
