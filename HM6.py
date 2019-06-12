@@ -21,7 +21,9 @@
 # all the nodes in the subtree of its children. Thus, we can calculate the
 # number of nodes recursively using concept of DFS and DP, where we should
 # process each edge only once and count[] value of a children used in calculating
-# count[] of its parent expressing the concept of DP(Dynamic programming).
+# count[] of its parent expressing the concept of DP(Dynamic programming). 
+
+#This homework was more applicable with BFS!
 
 
 import json
