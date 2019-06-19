@@ -36,7 +36,13 @@ x = sorted(peptides, key=len)
 
 
 
-#with Bio package
+#with Bio 
+1)
+from Bio.SeqUtils import six_frame_translations
+print(six_frame_translations("AGTACTAGAGCATTCTATGGAG"))
+
+
+2)
 import Bio
 from Bio.Seq import Seq
 from Bio.Alphabet import generic_dna
